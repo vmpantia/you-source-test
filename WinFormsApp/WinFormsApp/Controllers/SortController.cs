@@ -26,7 +26,7 @@ namespace WinFormsApp.Controllers
             var strategy = _sortStrategies.GetValueOrDefault(dto.Type);
 
             // Check if any strategy found on the selected type
-            if (strategy is SortStrategy) result = strategy.Sort(dto);
+            if (strategy is SortStrategy) result = strategy.Sort(dto.Value);
 
             return result;
         }

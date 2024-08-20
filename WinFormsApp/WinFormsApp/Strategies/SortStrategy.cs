@@ -4,7 +4,7 @@ namespace WinFormsApp.Strategies
 {
     public abstract class SortStrategy
     {
-        public abstract string Sort(SortDto dto);
+        public abstract string Sort(string value);
 
         public char[] GetCharacters(string value) => value.ToCharArray();
     }

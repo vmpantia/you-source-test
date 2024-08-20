@@ -4,9 +4,9 @@ namespace WinFormsApp.Strategies
 {
     public class BubbleSortStrategy : SortStrategy
     {
-        public override string Sort(SortDto dto)
+        public override string Sort(string value)
         {
-            var characters = GetCharacters(dto.Value);
+            var characters = GetCharacters(value);
             int noOfCharacters = characters.Length;
 
             for (int idx = 0; idx < noOfCharacters - 1; idx++)
